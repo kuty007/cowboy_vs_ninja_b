@@ -30,8 +30,6 @@ namespace ariel {
         bool isCowboy() const;
         void setIsCowboy(bool isCowboy);
 
-
-
         Character(const std::string &name, const Point &location, int health_points);
 
         const Point &getLocation() const;

@@ -12,8 +12,13 @@ namespace ariel {
     class SmartTeam : public Team {
     public:
         SmartTeam(Character *leader);
+
         void add(Character *character) override;
+
+
         void attack(Team *other) override;
+
+        static bool compare_by_life(Character *a_c, Character *b_c);
 
     };
 

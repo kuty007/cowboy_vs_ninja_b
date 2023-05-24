@@ -31,7 +31,7 @@ namespace ariel {
 
         string print() const override;
 
-        int getAmmo() const;
+
 
         ~Cowboy() override = default;
 

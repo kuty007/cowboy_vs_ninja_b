@@ -15,6 +15,7 @@ namespace ariel {
         double x_value;
         double y_value;
     public:
+
         double distance(const Point &other) const;
 
         string print() const;
@@ -26,11 +27,6 @@ namespace ariel {
         Point moveTowards(const Point &other, double dist) const;
 
         static Point moveTowards(const Point &point1, const Point &point2, double dist);
-
-        double getX() const;
-
-        double getY() const;
-
     };
 
 } // ariel

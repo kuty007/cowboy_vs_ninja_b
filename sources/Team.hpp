@@ -34,6 +34,8 @@ namespace ariel {
 
         Character *getLeader() const;
 
+        void setLeader(Character *leader);
+
         Team(Character *leader);
 
         virtual void add(Character *character);
@@ -44,7 +46,7 @@ namespace ariel {
 
         void print();
 
-        static void sortVector(std::vector<Character *> &characters);
+        static void sortVector(std::vector<Character *> &characters, bool (*compare)(Character *, Character *));
 
         int stillAlive();
 

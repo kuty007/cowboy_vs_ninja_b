@@ -12,14 +12,15 @@ namespace ariel {
         // should be protected but tidy
         int speed;
 
-
+    protected:
+        Ninja(const string &name, const Point &location);
     public:
 
         void setSpeed(int speed);
 
         int getSpeed() const;
 
-        Ninja(const string &name, const Point &location);
+//        Ninja(const string &name, const Point &location);
 
         void move(const Character *other);
 
