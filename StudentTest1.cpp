@@ -540,10 +540,6 @@ TEST_SUITE("Battle simulations") {
         while (team1.stillAlive() && team2.stillAlive()) {
             team1.attack(&team2);
             team2.attack(&team1);
-            cout << "Team 1: " << endl;
-            team1.print();
-            cout << "Team 2: " << endl;
-            team2.print();
         }
 
 
